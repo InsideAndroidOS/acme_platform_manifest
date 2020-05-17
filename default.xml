@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="acme"
+           fetch="."
+           revision="master" />
+
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-10.0.0_r33"
            remote="aosp"
            sync-j="4" />
 
+  <!-- Acme Projects -->
+  <project path="vendor/acme/one/interfaces" name="platform_vendor_acme_one_interfaces" remote="acme" />
+
+  <!-- AOSP Projects -->
   <project path="build/make" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
