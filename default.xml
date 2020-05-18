@@ -13,6 +13,13 @@
            sync-j="4" />
 
   <!-- Acme Projects -->
+  <project path="device/acme/one/acme_one" name="platform_device_acme_one_acme_one" remote="acme" >
+    <linkfile src="AndroidProducts.makefile" dest="device/acme/one/AndroidProducts.mk" />
+    <linkfile src="acme_one.mk" dest="device/acme/one/acme_one.mk" />
+  </project>
+  <project path="device/acme/one/include" name="platform_device_acme_one_include" remote="acme" />
+  <project path="device/acme/one/lib" name="platform_device_acme_one_lib" remote="acme" />
+  <project path="device/acme/one/daemon" name="platform_device_acme_one_daemon" remote="acme" />
   <project path="vendor/acme/one/interfaces" name="platform_vendor_acme_one_interfaces" remote="acme" />
 
   <!-- AOSP Projects -->
