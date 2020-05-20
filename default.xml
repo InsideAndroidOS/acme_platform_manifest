@@ -20,6 +20,7 @@
   <project path="device/acme/one/include" name="platform_device_acme_one_include" remote="acme" />
   <project path="device/acme/one/lib" name="platform_device_acme_one_lib" remote="acme" />
   <project path="device/acme/one/daemon" name="platform_device_acme_one_daemon" remote="acme" />
+  <project path="device/acme/one/hidl" name="platform_device_acme_one_hidl" remote="acme" />
   <project path="vendor/acme/one/interfaces" name="platform_vendor_acme_one_interfaces" remote="acme" />
 
   <!-- AOSP Projects -->
