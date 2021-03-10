@@ -17,13 +17,32 @@
     <linkfile src="AndroidProducts.makefile" dest="device/acme/one/AndroidProducts.mk" />
     <linkfile src="acme_one.mk" dest="device/acme/one/acme_one.mk" />
   </project>
-  <project path="device/acme/one/app" name="platform_device_acme_one_app" remote="acme" />
-  <project path="device/acme/one/include" name="platform_device_acme_one_include" remote="acme" />
-  <project path="device/acme/one/lib" name="platform_device_acme_one_lib" remote="acme" />
-  <project path="device/acme/one/daemon" name="platform_device_acme_one_daemon" remote="acme" />
-  <project path="device/acme/one/hidl" name="platform_device_acme_one_hidl" remote="acme" />
-  <project path="vendor/acme/one/interfaces" name="platform_vendor_acme_one_interfaces" remote="acme" />
-  <project path="device/linaro/hikey" name="platform_device_linaro_hikey" remote="acme" revision="acme" groups="device,hikey,pdk" />
+  <project path="device/acme/one/proximity"
+           name="platform_device_acme_one_proximity"
+           remote="acme" />
+  <project path="device/acme/one/app/simple_daemon" 
+           name="platform_device_acme_one_app_simple_daemon"
+           remote="acme"
+           />
+  <project path="device/acme/one/app/native_daemon"
+           name="platform_device_acme_one_app_native_daemon"
+           remote="acme"
+           groups="nodefault" />
+  <project path="device/acme/one/app/java_daemon"
+           name="platform_device_acme_one_app_java_daemon"
+           remote="acme"
+           groups="nodefault" />
+  <project path="device/acme/one/hidl" 
+           name="platform_device_acme_one_hidl"
+            remote="acme" />
+  <project path="vendor/acme/one/interfaces"
+           name="platform_vendor_acme_one_interfaces"
+           remote="acme" />
+  <project path="device/linaro/hikey"
+           name="platform_device_linaro_hikey"
+           remote="acme"
+           revision="acme"
+           groups="device,hikey,pdk" />
  
   <!-- AOSP Projects -->
   <project path="build/make" name="platform/build" groups="pdk" >
