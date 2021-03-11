@@ -16,14 +16,20 @@
   <project path="device/acme/one/acme_one" name="platform_device_acme_one_acme_one" remote="acme" >
     <linkfile src="AndroidProducts.makefile" dest="device/acme/one/AndroidProducts.mk" />
     <linkfile src="acme_one.mk" dest="device/acme/one/acme_one.mk" />
+    <linkfile src="manifest.xml" dest="device/acme/one/manifest.xml" />
   </project>
   <project path="device/acme/one/proximity"
            name="platform_device_acme_one_proximity"
            remote="acme" />
+  <project path="device/acme/one/app/PermsSampleClient"
+           name="platform_device_acme_one_app_PermsSampleClient"
+           remote="acme" />
+  <project path="device/acme/one/app/PermsSampleHost"
+           name="platform_device_acme_one_app_PermsSampleHost"
+           remote="acme" />
   <project path="device/acme/one/app/simple_daemon" 
            name="platform_device_acme_one_app_simple_daemon"
-           remote="acme"
-           />
+           remote="acme" />
   <project path="device/acme/one/app/native_daemon"
            name="platform_device_acme_one_app_native_daemon"
            remote="acme"
@@ -34,7 +40,13 @@
            groups="nodefault" />
   <project path="device/acme/one/hidl" 
            name="platform_device_acme_one_hidl"
-            remote="acme" />
+           remote="acme" />
+  <project path="device/acme/one/app/aproximitycl"
+           name="platform_device_acme_one_app_aproximitycl"
+           remote="acme" />
+  <project path="device/acme/one/app/AproximityClient"
+           name="platform_device_acme_one_app_AproximityClient"
+           remote="acme" />
   <project path="vendor/acme/one/interfaces"
            name="platform_vendor_acme_one_interfaces"
            remote="acme" />
